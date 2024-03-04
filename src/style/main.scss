@@ -10,5 +10,6 @@
 @import 'modules/variables';
 
 .hello {
-    background-color: $red;
+  background-image: url("/src/style/images/background.png");
+    /* background-color: $red; */
   }
