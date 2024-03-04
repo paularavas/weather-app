@@ -7,8 +7,8 @@
    
     margin-top: 60px;
   } 
+@import 'modules/variables';
 
-$color-red: red;
 .hello {
-    background-color: $color-red;
+    background-color: $red;
   }
