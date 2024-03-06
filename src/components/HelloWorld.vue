@@ -21,10 +21,10 @@
             <div class="city-temperature">
               <img :src="require('@/style/images/day/116.png')">
               <div>
-                <p class="temperature">20<span>C</span></p>
-                <p class="temp-feel">Feels like:</p>
+                
               </div>
-              
+              <p class="temperature">20<span>C</span></p>
+              <p class="temp-feel">Feels like:</p>
               <span>15C</span>
               <p class="high-low">H: <span>XX</span></p>
             </div>
