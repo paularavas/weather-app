@@ -4,39 +4,95 @@
       <div class="middle-part">
         <div class="card-container">
           <!-- First row of cards -->
-          <div class="card">Air Quality<span class="card-text">XX</span></div>
-          <div class="card">Precipitation</div>
-          <div class="card">Wind</div>
+          <div class="card">
+            <span class="air">Air Quality:</span>
+            <span class="card-text">XX</span>
+            <span class="good">GOOD</span>
+          </div>
+          <div class="card">
+            <span class="precipitation">Precipitation:</span>
+            <span class="card-text">XX</span>
+            <div class="card-unit">
+              <p>mm</p>
+              <p>in</p>
+            </div>
+          </div>
+          <div class="card">
+            <span class="wind">Wind:</span>
+            <span class="card-text">XX</span>
+            <div class="card-unit">
+              <p>mph</p>
+              <p>kmph</p>
+            </div>
+          </div>
           <!-- Second row of cards -->
-          <div class="card">Pressure</div>
-          <div class="card">Visibility</div>
-          <div class="card">UV Index</div>
+          <div class="card">
+            <span class="pressure">Pressure:</span>
+            <span class="card-text">XX</span>
+            <div class="card-unit">
+              <p>mb</p>
+              <p>in</p>
+            </div>
+          </div>
+          <div class="card">
+            <span class="visibility">Visibility:</span>
+            <span class="card-text">XX</span>
+            <div class="card-unit">
+              <p>km</p>
+              <p>mi</p>
+            </div>
+          </div>
+          <div class="card">
+            <span class="uv">UV Index:</span>
+            <span class="card-text">XX</span>
+            <span class="good">GOOD</span>
+          </div>
         </div>
       </div>
     <div class="weather-box">
-      <div class="box">
-        <div class="info">
-          <div class="weather">
+        <div class="weather">
             <h1 class="city-name">Sibiu, Romania</h1>
             <div class="city-temperature">
-              <img :src="require('@/style/images/day/116.png')">
-              <div>
-                
+              <img :src="require('@/style/images/day/113.png')">
+              <div class="temperature-info">
+                <p class="temperature">20</p>
+                <p class="temp-feel">Feels like: </p>
+                <div class="feel-like-temp"> 
+                    <span>15</span>
+                </div>
               </div>
-              <p class="temperature">20<span>C</span></p>
-              <p class="temp-feel">Feels like:</p>
-              <span>15C</span>
-              <p class="high-low">H: <span>XX</span></p>
+              <div class="unit-container">
+                 <p>F</p>
+                 <p class="unit">C</p> 
+              </div>
+              <div class="high-low">
+                <p class="high-low-text">H: <span>XX</span></p>
+                <p class="high-low-text">L: <span>XX</span></p>
+              </div>
             </div>
+        </div>
+    </div>
+    <div class="additional-card-wrapper">
+      <div class="additional-card">
+        <img :src="require('@/style/images/day/116.png')">
+        <h2> March 11th, 2024</h2> 
+        <div class="moon-info">
+          <div>
+            <span class="info-label">Phase:</span>
+            <span class="moon-text">Full moon</span>
+          </div>
+          <div>
+            <span class="info-label">Visibility:</span>
+            <span class="moon-text">XX%</span>
+          </div>
+          <div>
+            <span class="info-label">Distance:</span>
+            <span class="moon-text">XXX,XXX.XX km</span>
           </div>
         </div>
       </div>
     </div>
-    <div>
-      <div class="additional-card">Additional Card</div>
-    </div>
   </div>
-  <h1>{{ msg }}</h1>
   
  <!-- <div>
     <p>
@@ -76,9 +132,6 @@
 /*import Header from './components/Header.vue' */
 
 export default {
-  name: 'HelloWorld',
-  props: {
-    msg: String
-  }
+  name: 'HelloWorld'
 }
 </script>

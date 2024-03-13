@@ -1,22 +1,25 @@
 <template>
  <!-- <img alt="Vue logo" src="./assets/logo.png">``--> 
   <HeaderComponent></HeaderComponent>
-  <HelloWorld msg="Weather App soon"/>
+  <HelloWorld></HelloWorld>
+  <PredComp msg="Weather App soon"/>
 </template>
 
 <script>
 import HeaderComponent from './components/HeaderComponent.vue'
 import HelloWorld from './components/HelloWorld.vue'
+import PredComp from './components/PredComp.vue'
 
 export default {
   name: 'App',
   components: {
     HeaderComponent,
-    HelloWorld
+    HelloWorld,
+    PredComp
   }
 }
 </script>
 
 <style lang="scss">
 // empty
-</style>
+</style>./components/PredictionsComponent.vue
